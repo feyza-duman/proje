@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-ticaret örneği_login</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="content/site.css"> -->
+    <!-- FONTS -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> -->
+    <!-- JAVASCRİPT
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
+
+
+</head>
+
+<body>
+
+    <!-- nav begin -->
+    <nav class="navbar navbar-expand-md navbar navbar-primary ">
+        <a class="navbar-brand" href="HomePage.html"><b>Dumanss</b> </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label=" Menü ">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="Register.html">
+                        <span class="fa fa-user-plus mr-2"></span> Kayıt Ol</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html"> <span class="fa fa-sign-in mr-2"></span>Giriş</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlProfile" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"><span class="fa fa-user mr-2"></span>Profil</a>
+                    <div class="dropdown-menu" aria-labelledby="ddlProfile">
+                        <a class="dropdown-item" href="MyProfile.html">profil</a>
+                        <a class="dropdown-item" href="Adresses.html">adres</a>
+                        <a class="dropdown-item" href="Orders.html">sipariş</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlSepet" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"><span
+                            class="fa fa-shopping-basket mr-2"></span>Sepetim</a>
+                    <div class="dropdown-menu" aria-labelledby="ddlSepet">
+                        <a class="dropdown-item" href="Product.html">Ürün 1</a>
+                        <a class="dropdown-item" href="Product.html">Ürün 2</a>
+                        <a class="dropdown-item" href="Product.html">Ürün 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Cart.html">Sepete Git</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlMessages" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"><span class="fa fa-envelope mr-2"></span>Mesajlar</a>
+                    <div class="dropdown-menu" aria-labelledby="ddlMessages">
+                        <a class="dropdown-item" href="Message.html">Mesaj 1</a>
+                        <a class="dropdown-item" href="Message.html">Mesaj 2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Messages.html">Mesajlar</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="HomePage.html"><span class="fa fa-sign-out mr-2"></span>Çıkış</a>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+    </nav>
+    <!-- nav end -->
+    <div class="container">
+        <!-- content begin -->
+        <div class="row my-4">
+            <div class="col-md-4">
+
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                      </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="http://placehold.it/400x300" class="d-block w-100" alt="first">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="http://placehold.it/400x300" class="d-block w-100" alt="second">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="http://placehold.it/400x300" class="d-block w-100" alt="third">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8 ">
+               <div class="form-group text-right">
+                  <div class="col-md-12">
+                    <b> Ürün Adı : Lorem.</b> 
+                       
+                  </div>
+                  <div class="col-md-12 text-danger ">
+                    <b>100.00 TL</b>  
+                  </div>
+               </div>
+               
+               <div class="form-group">
+                   <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sunt fuga repellendus, nesciunt excepturi omnis ex! officiis fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sunt fuga repellendus, nesciunt excepturi omnis ex! officiis fuga </p>
+                
+                   <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sunt fuga repellendus, nesciunt excepturi omnis ex! officiis fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sunt fuga repellendus, nesciunt excepturi omnis ex! officiis fuga </p>
+                
+                 
+                  
+               </div>
+
+                <div class="form-group">
+                    <span class="text-danger mr-4"> <b>Derecelendirme : </b></span>
+                    <span class="text-warning">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star-o"></span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row my-4">
+            <div class="col-md-12 text-right mb-4">
+                <button class="btn btn-success "><span class="fa fa-shopping-cart mr-2"> </span>
+                    Sepete Ekle
+                </button>
+            </div>
+        </div>
+        <!-- content end -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <h3>Yorumlar:</h3>
+                    <hr>
+                </div>
+
+                <div class="form-group">
+                    <div class="media my-2">
+                        <a href="" class="mr-4">
+                            <img src="http://placehold.it/64x64" class="rounded-circle img-humbnail">
+                        </a>
+                        <div class="media-body">
+                            <h5>Feyza Duman</h5>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias amet autem minima quibusdam dolor beatae. Voluptatibus amet placeat dolorem ex totam ab, sed fuga asperiores!
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="media my-2">
+                        <a href="" class="mr-4">
+                            <img src="http://placehold.it/64x64" class="rounded-circle img-humbnail">
+                        </a>
+                        <div class="media-body">
+                            <h5>Feyza Duman</h5>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias amet autem minima quibusdam dolor beatae. Voluptatibus amet placeat dolorem ex totam ab, sed fuga asperiores!
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea cols="30" rows="3"  name="comment" id="comment"  class="form-control" maxlength="255" placeholder="yorumunuz*">
+
+                </textarea>
+               </div >
+               <div class="form-group text-right"><button class="btn btn-success btn-sm " > 
+                <span class="fa fa-send"></span>
+                Gönder
+             </button></div>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- footer begin -->
+
+    <div class="card card-default  ">
+        <div class="card-body text-center">
+            <h5 class="card-title"> Dumanss Website</h5>
+            <div>
+                <a href="#" class="btn text-primary">
+                    <span class="fa fa-twitter fa-2x"></span> </a>
+
+                <a href="#" class="btn text-danger">
+                    <span class="fa fa-instagram fa-2x"></span></a>
+
+                <a href="#" class="btn text-primary">
+                    <span class="fa fa-facebook fa-2x"></span></a>
+
+            </div>
+
+            <a href="mailto:xxxx@mail.com" class="btn btn-info btn-sm"> <span class="fa fa-at mr-2"></span> e-posta
+                gönder </a>
+
+        </div>
+        <div class="card-footer text-center">
+            <b>Designed by Feyza Duman &copy; 2020</b>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer end -->
+</body>
+
+</html>
